@@ -1,0 +1,89 @@
+.pokedex {
+  &__data {
+    background-color: white;
+    border-radius: 7px;
+    padding: 21px 49px;
+    margin-bottom: 35px;
+  }
+  &__screen {
+    background-color: #FAFAFA;
+    border: 1px solid #ECEFF1;
+    height: 216px;
+    padding: 21px 0;
+    figure {
+      margin: 0;
+      img {
+        display: block;
+        height: auto;
+        margin: 0 auto;
+        width: 90%;
+      }
+    }
+  }
+  &__name {
+    color: #333;
+    font-family: $press;
+    text-align: center;
+    text-transform: capitalize;
+  }
+  &__info {
+    h4 {
+      color: #333;
+      font-family: $press;
+      font-size: 14px;
+      margin-bottom: 0;
+      margin-top: 0;
+      text-align: center;
+      text-transform: capitalize;
+    }
+    .info {
+      &__data {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        figure {
+          height: 70px;
+          margin: 0 auto;
+        }
+        ul {
+          font-family: $press;
+          list-style: none;
+          margin: 0 auto;
+          padding: 0;
+          width: 80%;
+          li {
+            margin-bottom: 3px;
+            strong {
+              font-size: 11px;
+            }
+            .items {
+              .item {
+                display: inline-block;
+                font-family: $roboto;
+                font-size: 12px;
+                margin-left: 6px;
+                position: relative;
+                &::before {
+                  bottom: 0;
+                  content: ",";
+                  display: block;
+                  right: -3px;
+                  position: absolute;
+                }
+                &:first-child {
+                  margin-left: 0;
+                }
+                &:last-child {
+                  &::before {
+                    display: none;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  background-color: aquamarine;
+
+  &__content {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+  }
+}
+
+.pokedex {
+  background-color: #e93f4f;
+  border-radius: 7px;
+  padding: 21px;
+
+  &__content {
+    width: 320px;
+  }
+}
